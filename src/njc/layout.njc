@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Антифроген</title>
+</head>
+<body>
+<div class="page">
+	<header class="header">
+		<nav class="container menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Antifrogen® N</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Antifrogen ® L</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Проктаген ®</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Цены</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Калькулятор</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">FAQ</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Доставка</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Оплата</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#0" class="menu__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="wrapper">
+		{% block content %} {% endblock %}
+	</div>
+	<footer class="footer">
+		<div class="footer__map">
+			<script type="text/javascript" charset="utf-8" async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1df7c45658516f39a48e6ac1bf793de60f1d7e8cf8628a7de89b25ecc47f9979&amp;width=100%25&amp;height=553&amp;lang=ru_RU&amp;scroll=true; myMap.behaviors.disable('scrollZoom');"></script>
+		</div>
+		<div class="footer__info">
+			<div class="container footer__inside">
+				<div class="footer__copyright">
+					<span>© 2016 - 2018 Атмосфера Тепла</span>
+				</div>
+				<div class="footer__social">
+					<a class="social social--vk" href="#0">
+						<span class="social__name">Вконтакте</span>
+					</a>
+					<a class="social social--fb" href="#0">
+						<span class="social__name">Фейсбук</span>
+					</a>
+					<a class="social social--instagram" href="#0">
+						<span class="social__name">Инстаграм</span>
+					</a>
+				</div>
+				<address class="footer__address">
+					<span class="footer__phone">+7 (495) 765-21-31</span>
+					<span class="footer__location">ул. Рябиновая, д. 41, корп. 1, стр. 6, Экспо Дизайн Центр Madex</span>
+					<span class="footer__schedule">Пн-Пт: 10-19</span>
+				</address>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

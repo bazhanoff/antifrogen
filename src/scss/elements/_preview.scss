@@ -1,0 +1,60 @@
+@import "../variables";
+
+.preview {
+	position: relative;
+	padding-top: 16rem;
+	padding-bottom: 7rem;
+	color: $white;
+	background-image: url("../../images/previewbox.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+
+	&:before {
+		content: "";
+		top: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		opacity: .5;
+	}
+}
+
+.preview__container {
+	position: relative;
+}
+
+.preview__header {
+	display: flex;
+	justify-content: space-between;
+ }
+
+.preview__phone {
+	font-size: 3.5rem;
+}
+
+.preview__info {
+	margin-top: 15rem;
+	text-align: center;
+}
+
+.preview__description {
+	max-width: 90rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 6.2rem;
+	font-size: 3.4rem;
+}
+
+.preview__footer {
+	margin-top: 8.1rem;
+}
+
+.preview__footer-slogan {
+	display: block;
+	max-width: 65rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7.6rem;
+	font-size: 1.6rem;
+}

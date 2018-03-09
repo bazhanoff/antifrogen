@@ -1,0 +1,36 @@
+@import "../variables";
+
+.social {
+	display: inline-block;
+	vertical-align: top;
+	width: 5rem;
+	height: 5rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .3s;
+
+	&:not(:first-child) {
+		margin-left: 2rem;
+	}
+
+	&:hover, &:focus {
+		opacity: .5;
+	}
+}
+
+.social--vk {
+	background-image: url("../../images/icon-vk.png");
+}
+
+.social--fb {
+	background-image: url("../../images/icon-fb.png");
+}
+
+.social--instagram {
+	background-image: url("../../images/icon-instagram.png");
+}
+
+.social__name {
+	position: absolute;
+	left: -99999px;
+}

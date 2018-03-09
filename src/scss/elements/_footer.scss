@@ -1,0 +1,55 @@
+@import "../variables";
+
+.footer {
+	color: $white;
+}
+
+.footer__info {
+	background: linear-gradient(to bottom, $blue, #1D94B7);
+	padding-top: 4.6rem;
+	padding-bottom: 4.6rem;
+}
+
+.footer__inside {
+	display: flex;
+	align-items: center;
+}
+
+.footer__address {
+	font-style: normal;
+	max-width: 38rem;
+}
+
+.footer__phone {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.footer__location {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.footer__schedule {
+	display: block;
+}
+
+@media (min-width: 1025px) {
+
+	.footer__inside {
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.footer__inside {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.footer__social, .footer__address {
+		margin-bottom: 2rem;
+	}
+
+}

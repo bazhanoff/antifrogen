@@ -1,0 +1,51 @@
+@import "../variables";
+
+@keyframes opacity {
+	from { opacity: .7; }
+	to { opacity: 1; }
+}
+
+.button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+
+	//&--small {
+	//	border-radius: 5px;
+	//	font-size: 1.3rem;
+	//	padding: 1rem 1.5rem;
+	//	font-weight: 300;
+	//}
+
+	&--middle {
+		padding: 1.5rem 6.7rem;
+		border-radius: 30px;
+		font-size: 3rem;
+		font-weight: 600;
+		color: $white;
+		text-transform: uppercase;
+		background-color: $blue;
+		box-shadow: inset 0 -30px 50px -3px #1D94B7;
+		transition: background-color .3s,
+					box-shadow .3s ease-in-out;
+
+		&:hover, &:focus {
+			background-color: $burgundy;
+			box-shadow: inset 0  30px 50px -3px #E8207A;
+
+		}
+	}
+
+	//&--orange {
+	//	background-color: $orange;
+	//	color: $white;
+	//
+	//	&:hover,
+	//	&:focus {
+	//		background-color: lighten($orange, 8%);
+	//		box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.25);
+	//	}
+	//}
+}

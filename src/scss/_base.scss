@@ -1,0 +1,47 @@
+@import "variables";
+
+@media (min-width: 768px) {
+
+	html {
+		font-size: 62.5%;
+	}
+}
+
+@media (max-width: 767px) {
+
+	html {
+		font-size: 55.14705%;
+	}
+}
+
+body {
+	background-color: $white;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+	color: $black;
+	font-size: 1.7rem;
+	margin: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	//line-height: 1.6;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+//a {
+//	color: $blue;
+//
+//	&:hover, &:focus {
+//		text-decoration: none;
+//	}
+//}
+
+img {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+}
