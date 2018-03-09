@@ -22,6 +22,7 @@ gulp.task('layout', function () {
     return gulp.src(['src/njc/pages/**/*.+(html|njc)'])
         .pipe(nunjucksRender())
         .pipe(gulp.dest('build'))
+        // .pipe(gulp.dest('/'))
         .pipe(server.reload({stream: true}));
 });
 
@@ -37,6 +38,7 @@ gulp.task('styles', function () {
         .pipe(postcss(processors))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css'))
+        // .pipe(gulp.dest('css'))
         .pipe(server.reload({stream: true}));
 });
 
@@ -48,6 +50,7 @@ gulp.task('images', function () {
             use: [pngquant()]
         }))
         .pipe(gulp.dest('build/images'))
+        // .pipe(gulp.dest('images'))
         .pipe(server.reload({stream: true}));
 });
 
@@ -59,6 +62,7 @@ gulp.task('scripts', function () {
         'src/js/**/*'
     ])
         .pipe(gulp.dest('build/js'))
+        // .pipe(gulp.dest('js'))
         .pipe(server.reload({stream: true}));
 });
 
@@ -83,6 +87,7 @@ gulp.task('svgstore', function () {
         }))
         .pipe(rename('sprite.svg'))
         .pipe(gulp.dest('build/images'));
+        // .pipe(gulp.dest('images'));
 });
 
 gulp.task('fonts', function () {
@@ -90,6 +95,7 @@ gulp.task('fonts', function () {
         'src/font/**/*'
     ])
         .pipe(gulp.dest('build/font'))
+        // .pipe(gulp.dest('font'))
         .pipe(server.reload({stream: true}));
 });
 
