@@ -12,40 +12,45 @@
 	font: inherit;
 	cursor: pointer;
 
-	//&--small {
-	//	border-radius: 5px;
-	//	font-size: 1.3rem;
-	//	padding: 1rem 1.5rem;
-	//	font-weight: 300;
-	//}
+	&--xl {
+		padding: 1rem 2.9rem;
+		border-radius: 40px;
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
 
-	&--middle {
+	&--xxl {
 		padding: 1.5rem 6.7rem;
-		border-radius: 30px;
+		border-radius: 40px;
 		font-size: 3rem;
 		font-weight: 600;
-		color: $white;
 		text-transform: uppercase;
+	}
+
+	&--blue {
 		background-color: $blue;
+		color: $white;
 		box-shadow: inset 0 -30px 50px -3px #1D94B7;
 		transition: background-color .3s,
-					box-shadow .3s ease-in-out;
+		box-shadow .3s;
 
 		&:hover, &:focus {
 			background-color: $burgundy;
-			box-shadow: inset 0  30px 50px -3px #E8207A;
+			box-shadow: inset 0 30px 50px -3px #E8207A;
 
 		}
 	}
 
-	//&--orange {
-	//	background-color: $orange;
-	//	color: $white;
-	//
-	//	&:hover,
-	//	&:focus {
-	//		background-color: lighten($orange, 8%);
-	//		box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.25);
-	//	}
-	//}
+	&--burgundy{
+		background-color: $burgundy;
+		color: $white;
+		box-shadow: inset 0 30px 50px -3px #E8207A;
+		transition: background-color .3s,
+					box-shadow .3s;
+
+		&:hover, &:focus {
+			background-color: $blue;
+			box-shadow: inset 0 -30px 50px -3px #1D94B7;
+		}
+	}
 }

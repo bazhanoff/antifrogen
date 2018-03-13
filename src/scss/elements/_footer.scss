@@ -2,15 +2,12 @@
 
 .footer {
 	color: $white;
-}
-
-.footer__info {
 	background: linear-gradient(to bottom, $blue, #1D94B7);
 	padding-top: 4.6rem;
 	padding-bottom: 4.6rem;
 }
 
-.footer__inside {
+.footer__info {
 	display: flex;
 	align-items: center;
 }
@@ -36,14 +33,14 @@
 
 @media (min-width: 1025px) {
 
-	.footer__inside {
+	.footer__info  {
 		justify-content: space-between;
 	}
 }
 
 @media (max-width: 1024px) {
 
-	.footer__inside {
+	.footer__info {
 		flex-direction: column-reverse;
 		text-align: center;
 	}
