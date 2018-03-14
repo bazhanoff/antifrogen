@@ -1,0 +1,59 @@
+@import "../variables";
+
+.payment__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 3rem;
+}
+
+.payment__list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.payment__list-item {
+	position: relative;
+	padding-left: 5rem;
+
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #E6E6E6;
+		font-size: 5.8rem;
+	}
+}
+
+.payment__cash {
+	&:before {
+		content: "1";
+	}
+}
+
+.payment__account {
+	&:before {
+		content: "2";
+	}
+}
+
+.payment__card {
+	&:before {
+		content: "3";
+	}
+}
+
+.payment__list-item:not(:last-child) {
+	margin-bottom: 2.3rem;
+}
+
+.payment__method {
+	display: block;
+}
+
+.payment__imgbox {
+	width: 70rem;
+}

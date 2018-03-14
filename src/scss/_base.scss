@@ -1,6 +1,36 @@
 @import "variables";
 
-@media (min-width: 768px) {
+@media (min-width: 3800px) {
+
+	html {
+		font-size: 170%;
+	}
+}
+
+@media (min-width: 2800px) and (max-width: 3799px) {
+
+	html {
+		font-size: 120%;
+	}
+}
+
+@media (min-width: 1800px) and (max-width: 2799px) {
+
+	html {
+		font-size: 92.5%;
+	}
+}
+
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+
+	html {
+		font-size: 72.5%;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1399px) {
 
 	html {
 		font-size: 62.5%;
@@ -21,6 +51,13 @@ body {
 	font-size: 1.7rem;
 	margin: 0;
 }
+
+//@media (min-width: 3000px) {
+//
+//	html {
+//		font-size: 2rem;
+//	}
+//}
 
 p {
 	margin-top: 0;

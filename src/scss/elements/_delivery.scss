@@ -1,0 +1,54 @@
+@import "../variables";
+
+.delivery {
+	position: relative;
+	background: #F5F4F6;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+		height: 90%;
+		background: url("../images/car.png") no-repeat;
+		background-size: 100% 100%;
+	}
+}
+
+.delivery__info {
+	padding-top: 14rem;
+	padding-bottom: 18rem;
+}
+
+.delivery__list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.delivery__list-item {
+	position: relative;
+	padding-left: 5rem;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+		border: 6px solid #E6E6E6;
+	}
+}
+
+.delivery__list-item:not(:last-child) {
+	margin-bottom: 2.3rem;
+}
+
+.delivery__location {
+	display: block;
+}
