@@ -12,7 +12,9 @@
 	height: 2.4rem;
 	font-size: 20px;
 	color: $white;
-	position: relative;
+	position: absolute;
+	top: 5px;
+	left: 15px;
 	text-indent: -9999px;
 	z-index: 2;
 }
