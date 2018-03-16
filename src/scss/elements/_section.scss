@@ -163,13 +163,9 @@
 	}
 }
 
-//.section__product {
-//	align-self: flex-end;
-//}
-
 .section__imgbox {
 	display: inline-block;
-	width: 360px;
+	max-width: 360px;
 }
 
 .section__slogan {
