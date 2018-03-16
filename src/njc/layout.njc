@@ -11,37 +11,42 @@
 <body>
 <div class="page">
 	<header class="header">
-		<nav class="container menu">
-			<ul class="menu__list">
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Antifrogen® N</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Antifrogen ® L</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Проктаген ®</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Цены</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Калькулятор</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">FAQ</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Доставка</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Оплата</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="#0" class="menu__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="container header__container">
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__list-item">
+						<a href="#antifrogen-n" class="menu__link">Antifrogen® N</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#antifrogen-l" class="menu__link">Antifrogen ® L</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#protagen" class="menu__link">Проктаген ®</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#0" class="menu__link">Цены</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#calculator" class="menu__link">Калькулятор</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#0" class="menu__link">FAQ</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#delivery" class="menu__link">Доставка</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#payment" class="menu__link">Оплата</a>
+					</li>
+					<li class="menu__list-item">
+						<a href="#contacts" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="button hamburger js-menu__toggle">
+				<span class="hamburger__label">Открыть меню</span>
+			</button>
+		</div>
 	</header>
 	<div class="wrapper">
 		{% block content %} {% endblock %}

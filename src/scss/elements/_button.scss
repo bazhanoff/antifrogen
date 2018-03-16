@@ -9,7 +9,7 @@
 	border: none;
 	background-color: transparent;
 	padding: 0;
-	font: inherit;
+	font-family: inherit;
 	cursor: pointer;
 
 	&--xl {
@@ -20,9 +20,9 @@
 	}
 
 	&--xxl {
-		padding: 1.5rem 6.7rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
 		border-radius: 40px;
-		font-size: 3rem;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
@@ -52,5 +52,23 @@
 			background-color: $blue;
 			box-shadow: inset 0 -30px 50px -3px #1D94B7;
 		}
+	}
+}
+
+@media (max-width: 600px) {
+
+	.button--xxl {
+		padding-left: 2.7rem;
+		padding-right: 2.7rem;
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 601px) {
+
+	.button--xxl {
+		padding-left: 6.7rem;
+		padding-right: 6.7rem;
+		font-size: 3rem;
 	}
 }

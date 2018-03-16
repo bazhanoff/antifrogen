@@ -2,7 +2,21 @@
 
 .header {
 	background-color: $blue;
-	position: fixed;
 	width: 100%;
-	z-index: 999;
+}
+
+@media (max-width: 1026px) {
+
+	.header__container{
+		padding-top: 5px;
+		//padding-bottom: 1rem;
+	}
+}
+
+@media (min-width: 1027px) {
+
+	.header {
+		position: fixed;
+		z-index: 999;
+	}
 }

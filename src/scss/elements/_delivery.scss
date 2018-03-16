@@ -3,22 +3,53 @@
 .delivery {
 	position: relative;
 	background: #F5F4F6;
+}
 
-	&:after {
+@media (min-width: 600px) {
+
+	.delivery:after {
 		content: "";
 		position: absolute;
-		top: 0;
 		right: 0;
-		width: 60%;
-		height: 90%;
 		background: url("../images/car.png") no-repeat;
 		background-size: 100% 100%;
 	}
+
+	.delivery__info {
+		width: 50%;
+	}
 }
 
-.delivery__info {
-	padding-top: 14rem;
-	padding-bottom: 18rem;
+@media (min-width: 1024px) {
+
+	.delivery:after {
+		top: 0;
+		width: 60%;
+		height: 90%;
+	}
+
+	.delivery__info {
+		padding-top: 14rem;
+		padding-bottom: 18rem;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+	.delivery:after {
+		top: 50%;
+		transform: translateY(-50%);
+		width: 50%;
+		height: 60%;
+	}
+}
+
+@media (max-width: 1023px) {
+
+	.delivery__info {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
 }
 
 .delivery__list {

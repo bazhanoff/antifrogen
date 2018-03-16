@@ -4,6 +4,13 @@
 	color: $white;
 }
 
+@media (max-width: 1026px) {
+
+	.menu {
+		display: none;
+	}
+}
+
 .menu__list {
 	display: flex;
 	justify-content: center;

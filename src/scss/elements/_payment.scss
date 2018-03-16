@@ -1,9 +1,18 @@
 @import "../variables";
 
+@media (min-width: 650px) {
+
+	.payment__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.payment__imgbox {
+		width: 70rem;
+	}
+}
 .payment__info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding-top: 3rem;
 }
 
@@ -52,8 +61,4 @@
 
 .payment__method {
 	display: block;
-}
-
-.payment__imgbox {
-	width: 70rem;
 }
