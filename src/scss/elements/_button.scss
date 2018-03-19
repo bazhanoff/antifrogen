@@ -12,6 +12,10 @@
 	font-family: inherit;
 	cursor: pointer;
 
+	&:focus {
+		outline: none;
+	}
+
 	&--xl {
 		padding: 1rem 2.9rem;
 		border-radius: 40px;

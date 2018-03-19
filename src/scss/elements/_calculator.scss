@@ -1,0 +1,40 @@
+@import "../variables";
+
+.calculator {
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: -10rem;
+		right: 0;
+		width: 29rem;
+		height: 28rem;
+		background: url("../images/calculator-big.png") no-repeat;
+		background-size: 100% 100%;
+	}
+}
+
+.calculator__info {
+	margin-top: 13rem;
+}
+
+//.calculator__product-hint {
+//	margin-right: 40rem;
+//}
+//
+//.calculator__liters-hint {
+//	margin-right: 9.7rem;
+//}
+//
+//.calculator__temperature-hint {
+//	margin-right: 37.5rem;
+//}
+
+.calculator__checkbox:not(:last-child) {
+	margin-right: 10rem;
+}
+
+.calculator__button {
+	margin-top: 8rem;
+}

@@ -359,14 +359,75 @@
 		</div>
 	</div>
 </section>
-<section id="calculator" class="section section--bg-blue">
+<section id="calculator" class="section section--bg-blue calculator">
 	<header class="section__header">
 		<div class="container">
 			<h2 class="title title--xxl title--bg-white  section__title">Калькулятор</h2>
 		</div>
 	</header>
-	<div class="container section__info">
-
+	<div class="container calculator__info">
+		<form class="form" method="get" action="#0">
+			<div class="form__row">
+				<label class="field field--icon">
+					<span class="field__hint calculator__product-hint">
+						<span class="field__hint-main">Продукт</span>
+						<span class="field__hint-aside">(Выберите один продукт)</span>
+					</span>
+					<label class="toggle toggle--checkbox calculator__checkbox">
+						<input class="toggle__input" type="radio" name="radio" checked="">
+						<span class="toggle__label">Антифроген Н</span>
+					</label>
+					<label class="toggle toggle--checkbox calculator__checkbox">
+						<input class="toggle__input" type="radio" name="radio">
+						<span class="toggle__label">Антифроген Л</span>
+					</label>
+				</label>
+			</div>
+			<div class="form__row">
+				<label class="field field--icon">
+					<span class="field__hint calculator__liters-hint">
+						<span class="field__hint-main">Сколько литров в системе</span>
+						<span class="field__hint-aside">(Если не знаете, как посчитать - звоните или оставьте заявку)</span>
+					</span>
+					<input class="field__input" placeholder="Укажите литры" required>
+				</label>
+			</div>
+			<div class="form__row">
+				<label class="field field--icon">
+					<span class="field__hint calculator__temperature-hint">
+						<span class="field__hint-main">Желаемая морозостойкость</span>
+						<span class="field__hint-aside">(Укажите температуру)</span>
+					</span>
+					<input class="field__input" placeholder="Укажите градусы" required>
+				</label>
+			</div>
+			<button class="button button--xl button--burgundy calculator__button">
+				рассчитать
+			</button>
+		</form>
+		<form class="form form__checkout" method="get" action="#0">
+			<div class="form__row">
+				<label class="field field--icon">
+					<span class="field__hint">
+						<span class="field__hint-main">Необходимо Антифроген Н / Антифроген Л</span>
+					</span>
+					<input class="field__input" placeholder="Укажите литры">
+					<input class="field__input" placeholder="Укажите канистры">
+				</label>
+			</div>
+			<div class="form__row">
+				<label class="field field--icon">
+					<span class="field__hint">
+						<span class="field__hint-main">Необходимо Дистилированной вода</span>
+					</span>
+					<input class="field__input" placeholder="Укажите литры">
+					<input class="field__input" placeholder="Укажите канистры">
+				</label>
+			</div>
+			<button class="button button--xl button--burgundy calculator__button">
+				оформить заказ
+			</button>
+		</form>
 	</div>
 </section>
 <section id="delivery" class="section delivery section--bg-burgundy">

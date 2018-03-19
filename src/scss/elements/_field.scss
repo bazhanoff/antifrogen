@@ -1,0 +1,67 @@
+@import "../variables";
+
+.field {
+	display: flex;
+	align-items: center;
+}
+
+.field--icon {
+	position: relative;
+	padding-left: 5rem;
+}
+
+.field--icon:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	border: 6px solid #e6e6e6;
+}
+
+.field__hint {
+	display: inline-block;
+	width: 40%;
+	margin-right: 10%;
+}
+
+.field__hint-main {
+	display: block;
+}
+
+.field__hint-aside {
+	display: block;
+}
+
+.field__input {
+	box-sizing: border-box;
+	padding: 1.5rem 4rem;
+	width: 23rem;
+	border-radius: 3px;
+	font: inherit;
+	appearance: none;
+	border: 1px solid transparent;
+	box-shadow: 0 0 20px #e6e6e6;
+	transition: border-color .25s;
+
+	&:not(:first-of-type) {
+		margin-left: 10%;
+	}
+
+	&::-moz-placeholder {
+		color: $black;
+	}
+
+	&::-webkit-input-placeholder {
+		color: $black;
+	}
+
+	&:focus {
+		border-color: $blue;
+		outline: none;
+	}
+}

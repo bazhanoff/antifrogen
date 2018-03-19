@@ -1,0 +1,56 @@
+@import "../variables";
+
+.toggle {
+	display: block;
+}
+
+.toggle__input {
+	position: absolute;
+	left: -99999px;
+}
+
+.toggle__label {
+	display: flex;
+	align-items: center;
+	min-height: 37px;
+	position: relative;
+	cursor: pointer;
+	padding-left: 50px;
+}
+
+.toggle__label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	box-sizing: border-box;
+	width: 33px;
+	height: 32px;
+	box-shadow: 0 0 20px #e6e6e6;
+	//border: 1px solid $gray;
+}
+
+.toggle--checkbox {
+	.toggle__label:before {
+		border-radius: 2px;
+	}
+}
+
+.toggle--checkbox {
+	.toggle__input:checked + .toggle__label:before {
+		background-color: $white;
+	}
+	.toggle__input:checked + .toggle__label:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		height: 9px;
+		width: 20px;
+		border-left: 3px solid $black;
+		border-bottom: 3px solid $black;
+		z-index: 2;
+		transform: translateY(-50%) rotate(-45deg);
+	}
+}
