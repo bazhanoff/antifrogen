@@ -24,10 +24,10 @@
 						<a href="#antifrogen-l" class="menu__link">Antifrogen ® L</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="#protagen" class="menu__link">Проктаген ®</a>
+						<a href="#protectogen" class="menu__link">Protectogen® C Aqua</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="#0" class="menu__link">Цены</a>
+						<a href="#water" class="menu__link">Вода</a>
 					</li>
 					<li class="menu__list-item">
 						<a href="#calculator" class="menu__link">Калькулятор</a>
@@ -75,6 +75,7 @@
 		</div>
 	</footer>
 </div>
-<script src="js/common.js"></script>
+<script defer src="js/jquery.min.js"></script>
+<script defer src="js/common.js"></script>
 </body>
 </html>

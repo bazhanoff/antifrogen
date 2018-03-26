@@ -114,7 +114,6 @@ gulp.task('serve', ['layout', 'styles', 'scripts', 'images', 'fonts', 'svgstore'
         open: true,
         ui: false
     });
-
     gulp.watch('src/**/*.{scss,sass}', ['styles']);
     gulp.watch('src/**/*.+(html|njc)', ['layout']);
     gulp.watch('src/**/*.js', ['scripts']);
