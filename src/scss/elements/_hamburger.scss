@@ -49,3 +49,21 @@
 .hamburger:focus {
 	outline: none;
 }
+
+.js-menu--activated .hamburger:before {
+	transform: translate3d(0, -50%, 0) rotate(45deg);
+	top: 50%;
+	transition-duration: .2s;
+}
+
+.js-menu--activated .hamburger:after {
+	transform: translate3d(0, -50%, 0) rotate(135deg);
+	top: 50%;
+	transition-duration: .2s;
+}
+
+.js-menu--activated .hamburger__label {
+	transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+	opacity: 0;
+	transition-duration: .2s;
+}

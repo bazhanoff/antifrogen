@@ -389,7 +389,7 @@
 						<span class="field__hint-main">Сколько литров в системе</span>
 						<span class="field__hint-aside">(Если не знаете, как посчитать - звоните или оставьте заявку)</span>
 					</span>
-					<input class="field__input" placeholder="Укажите литры" required>
+					<input class="js-field-liter field__input" placeholder="Укажите литры" required>
 				</label>
 			</div>
 			<div class="form__row">
@@ -398,35 +398,35 @@
 						<span class="field__hint-main">Желаемая морозостойкость</span>
 						<span class="field__hint-aside">(Укажите температуру)</span>
 					</span>
-					<input class="field__input" placeholder="Укажите градусы" required>
+					<input class="js-field-degree field__input" placeholder="Укажите градусы" required>
 				</label>
 			</div>
-			<button class="button button--xl button--burgundy calculator__button">
+			<button class="js-button-calculate button button--xl button--burgundy calculator__button" type="button">
 				рассчитать
 			</button>
-		</form>
-		<form class="form form__checkout" method="get" action="#0">
-			<div class="form__row">
-				<label class="field field--icon">
+			<div class="form form__checkout">
+				<div class="form__row">
+					<label class="field field--icon">
 					<span class="field__hint">
 						<span class="field__hint-main">Необходимо Антифроген Н / Антифроген Л</span>
 					</span>
-					<input class="field__input" placeholder="Укажите литры">
-					<input class="field__input" placeholder="Укажите канистры">
-				</label>
-			</div>
-			<div class="form__row">
-				<label class="field field--icon">
+						<input id="liters-antifrogen" class="field__input" placeholder="Результаты рассчёта в литрах" readonly required>
+						<input id="canister-antifrogen" class="field__input" placeholder="Результаты рассчёта в канистрах" readonly required>
+					</label>
+				</div>
+				<div class="form__row">
+					<label class="field field--icon">
 					<span class="field__hint">
 						<span class="field__hint-main">Необходимо Дистилированной вода</span>
 					</span>
-					<input class="field__input" placeholder="Укажите литры">
-					<input class="field__input" placeholder="Укажите канистры">
-				</label>
+						<input id="liters-water" class="field__input" placeholder="Результаты рассчёта в литрах" readonly required>
+						<input id="canister-water" class="field__input" placeholder="Результаты рассчёта в литрах" readonly required>
+					</label>
+				</div>
+				<button class="button button--xl button--burgundy calculator__submit">
+					оформить заказ
+				</button>
 			</div>
-			<button class="button button--xl button--burgundy calculator__button">
-				оформить заказ
-			</button>
 		</form>
 	</div>
 </section>

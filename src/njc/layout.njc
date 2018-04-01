@@ -10,9 +10,9 @@
 </head>
 <body>
 <div class="page">
-	<header class="header">
-		<div id="burger-menu" class="container header__container">
-			<button class="button hamburger js-menu__toggle">
+	<header class="js-menu header">
+		<div class="container header__container">
+			<button class="button hamburger">
 				<span class="hamburger__label">Открыть меню</span>
 			</button>
 			<nav class="menu">
