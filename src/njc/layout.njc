@@ -6,6 +6,7 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 <title>Антифроген</title>
 </head>
 <body>
@@ -57,13 +58,13 @@
 				<span>© 2016 - 2018 Атмосфера Тепла</span>
 			</div>
 			<div class="footer__social">
-				<a class="social social--vk" href="#0">
+				<a class="social social--vk" href="https://vk.com/oooatmosferatepla">
 					<span class="social__name">Вконтакте</span>
 				</a>
-				<a class="social social--fb" href="#0">
+				<a class="social social--fb" href="https://www.facebook.com/AtmosferaTepla/">
 					<span class="social__name">Фейсбук</span>
 				</a>
-				<a class="social social--instagram" href="#0">
+				<a class="social social--instagram" href="https://www.instagram.com/_atmosferatepla/">
 					<span class="social__name">Инстаграм</span>
 				</a>
 			</div>
