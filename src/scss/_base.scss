@@ -1,36 +1,6 @@
 @import "variables";
 
-@media (min-width: 3800px) {
-
-	html {
-		font-size: 170%;
-	}
-}
-
-@media (min-width: 2800px) and (max-width: 3799px) {
-
-	html {
-		font-size: 120%;
-	}
-}
-
-@media (min-width: 1800px) and (max-width: 2799px) {
-
-	html {
-		font-size: 92.5%;
-	}
-}
-
-
-@media (min-width: 1400px) and (max-width: 1799px) {
-
-	html {
-		font-size: 72.5%;
-	}
-}
-
-
-@media (min-width: 768px) and (max-width: 1399px) {
+@media (min-width: 768px) {
 
 	html {
 		font-size: 62.5%;

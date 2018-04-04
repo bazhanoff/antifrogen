@@ -34,7 +34,7 @@
 						<a href="#calculator" class="menu__link">Калькулятор</a>
 					</li>
 					<li class="menu__list-item">
-						<a href="#0" class="menu__link">FAQ</a>
+						<a class="menu__link menu__link-faq">FAQ</a>
 					</li>
 					<li class="menu__list-item">
 						<a href="#delivery" class="menu__link">Доставка</a>

@@ -88,11 +88,55 @@ $(document).ready(function () {
 
 	$(function () {
 		$(".js-button-calculate").on("click", function (evt) {
-			evt.preventDefault();
+			// evt.preventDefault();
 			calc();
+			var id = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top - 250}, 1500);
 			$(".js-button-calculate").blur();
 		});
 	});
+
+	$("#button-l").on("click", function () {
+		$("#description-aside-l").addClass("section__description-aside--active");
+		$(this).remove();
+	});
+
+	$("#button-n").on("click", function () {
+		$("#description-aside-n").addClass("section__description-aside--active");
+		$(this).remove();
+	});
+
+	$("#button-protectogen").on("click", function () {
+		$("#description-aside-protectogen").addClass("section__description-aside--active");
+		$(this).remove();
+	});
+
+	$("#button-water").on("click", function () {
+		$("#description-aside-water").addClass("section__description-aside--active");
+		$(this).remove();
+	});
+
+	$(".menu__link-faq").on("click", function () {
+		$("#modal-faq").addClass("modal--active-js");
+	});
+
+	$(".js-modal-close").on("click", function () {
+		$("#modal-faq").removeClass("modal--active-js");
+		$("#modal-checkout").removeClass("modal--active-js");
+	});
+
+	$("#button-checkout").on("click", function () {
+		var n = $('#liters-antifrogen');
+
+		if (n.val() != "")  {
+			$("#modal-checkout").addClass("modal--active-js");
+		}
+		else {
+			alert("Сначала нужно рассчитать!")
+		}
+	});
+
 
 });
 

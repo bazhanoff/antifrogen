@@ -123,11 +123,20 @@
 	background: url("../images/description-bg.png") 0 0 no-repeat;
 }
 
-.section__anchor {
+.section__description-aside {
+	display: none;
+
+	&--active {
+		display: block;
+	}
+}
+
+.section__description-button{
 	margin-top: 5.3rem;
 	padding-left: 7.6rem;
 	padding-top: 1.7rem;
 	padding-bottom: 1.7rem;
+	font-size: 1.7rem;
 	background: url("../images/anchor-bg.png") 0 50% no-repeat;
 	color: $gray;
 }
