@@ -124,12 +124,16 @@ $(document).ready(function () {
 	$(".js-modal-close").on("click", function () {
 		$("#modal-faq").removeClass("modal--active-js");
 		$("#modal-checkout").removeClass("modal--active-js");
+		$("#modal-checkout-n").removeClass("modal--active-js");
+		$("#modal-checkout-l").removeClass("modal--active-js");
+		$("#modal-checkout-water").removeClass("modal--active-js");
+		$("#modal-checkout-protectogen").removeClass("modal--active-js");
 	});
 
 	$("#button-checkout").on("click", function () {
 		var n = $('#liters-antifrogen');
 
-		if (n.val() != "")  {
+		if (n.val() != "") {
 			$("#modal-checkout").addClass("modal--active-js");
 		}
 		else {
@@ -137,6 +141,20 @@ $(document).ready(function () {
 		}
 	});
 
+	$("#button-checkout-n").on("click", function () {
+		$("#modal-checkout-n").addClass("modal--active-js");
+	});
 
+	$("#button-checkout-l").on("click", function () {
+		$("#modal-checkout-l").addClass("modal--active-js");
+	});
+
+	$("#button-checkout-water").on("click", function () {
+		$("#modal-checkout-water").addClass("modal--active-js");
+	});
+
+	$("#button-checkout-protectogen").on("click", function () {
+		$("#modal-checkout-protectogen").addClass("modal--active-js");
+	});
 });
 

@@ -191,9 +191,42 @@
 			</div>
 		</div>
 		<div class="section__buy">
-			<button class="button button--burgundy section__button">Купить</button>
+			<button id="button-checkout-n" type="button" class="button button--burgundy section__button">Купить</button>
 		</div>
 	</footer>
+	<div id="modal-checkout-n" class="modal modal--l">
+		<div class="modal__box">
+			<div class="modal__inner">
+				<header class="modal__header">
+					<h2 class="title modal__title">Заявка</h2>
+					<button class="button modal__close js-modal-close">close modal</button>
+				</header>
+				<div class="modal__content">
+					<form class="form-checkout" method="get" action="#0">
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Antifrogen® N</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">ФИО</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Телефон</span>
+							<input class="field__input" required>
+						</label>
+						<div class="form-checkout__footer">
+							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section id="antifrogen-l" class="section section--bg-gray section--bg-gray-bottom section--bg-sieve-burgundy">
 	<header class="section__header">
@@ -300,9 +333,42 @@
 			</div>
 		</div>
 		<div class="section__buy">
-			<button class="button button--burgundy section__button">Купить</button>
+			<button id="button-checkout-l" class="button button--burgundy section__button" type="button">Купить</button>
 		</div>
 	</footer>
+	<div id="modal-checkout-l" class="modal modal--l">
+		<div class="modal__box">
+			<div class="modal__inner">
+				<header class="modal__header">
+					<h2 class="title modal__title">Заявка</h2>
+					<button class="button modal__close js-modal-close">close modal</button>
+				</header>
+				<div class="modal__content">
+					<form class="form-checkout" method="get" action="#0">
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Antifrogen® L</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">ФИО</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Телефон</span>
+							<input class="field__input" required>
+						</label>
+						<div class="form-checkout__footer">
+							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section id="protectogen" class="section section--bg-sieve-blue">
 	<header class="section__header">
@@ -397,9 +463,40 @@
 			</div>
 		</div>
 		<div class="section__buy">
-			<button class="button button--burgundy section__button">Купить</button>
+			<button id="button-checkout-protectogen" class="button button--burgundy section__button" type="button">
+				Купить
+			</button>
 		</div>
 	</footer>
+	<div id="modal-checkout-protectogen" class="modal modal--l">
+		<div class="modal__box">
+			<div class="modal__inner">
+				<header class="modal__header">
+					<h2 class="title modal__title">Заявка</h2>
+					<button class="button modal__close js-modal-close">close modal</button>
+				</header>
+				<div class="modal__content">
+					<form class="form-checkout" method="get" action="#0">
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Protectogen® C Aqua</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">ФИО</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Телефон</span>
+							<input class="field__input" required>
+						</label>
+						<div class="form-checkout__footer">
+							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section id="water" class="section section--bg-gray section--bg-sieve-burgundy">
 	<header class="section__header">
@@ -451,7 +548,38 @@
 					</div>
 				</div>
 				<div class="section__buy">
-					<button class="button button--burgundy section__button">Купить</button>
+					<button id="button-checkout-water" class="button button--burgundy section__button" type="button">
+						Купить
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal-checkout-water" class="modal modal--l">
+		<div class="modal__box">
+			<div class="modal__inner">
+				<header class="modal__header">
+					<h2 class="title modal__title">Заявка</h2>
+					<button class="button modal__close js-modal-close">close modal</button>
+				</header>
+				<div class="modal__content">
+					<form class="form-checkout" method="get" action="#0">
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">ФИО</span>
+							<input class="field__input" required>
+						</label>
+						<label class="field field--icon form-checkout__row">
+							<span class="field__hint calculator__liters-hint">Телефон</span>
+							<input class="field__input" required>
+						</label>
+						<div class="form-checkout__footer">
+							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -558,7 +686,8 @@
 								<input class="js-field-liter field__input" required>
 							</label>
 							<div class="form-checkout__footer">
-								<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
+								<button class="button button--xl button--burgundy form-checkout__button">отправить
+								</button>
 							</div>
 						</form>
 					</div>
@@ -576,11 +705,15 @@
 			<div class="modal__content">
 				<p>
 					Вопрос: Кто производитель Antifrogen®?
+				</p>
+				<p>
 					Ответ: Компания Clariant – всемирно известный лидер на рынке
 					специализированных химических продуктов.
 				</p>
 				<p>
 					Вопрос: Когда и для чего Вам нужны жидкие теплоносители - Antifrogen®?
+				</p>
+				<p>
 					Ответ: Теплоносители - Antifrogen® применяются, когда необходимо защитить отопительную систему от
 					змораживания,
 					применить коррозионную защиту основного и вспомогательного оборудования, а также от отложений на
@@ -589,45 +722,46 @@
 				</p>
 				<p>
 					Вопрос: Какие продукты Antifrogen® предназначены для применения в отопительных системах ?
+				</p>
+				<p>
 					Ответ: Специально разработанные продукты: Antifrogen® N – на основе моноэтиленгликоля, Antifrogen®L-
-					на
-					основе
-					монопропиленгликоля.
+					на основе монопропиленгликоля.
 				</p>
 				<p>
 					Вопрос: Какой теплоноситель можно использовать в двух контурных котлах?
+				</p>
+				<p>
 					Ответ: Предпочтительно использовать Antifrogen® L – на основе монопропиленгликоля (пищевая добавка,
 					фармакопейного качества).
 				</p>
 				<p>
 					Вопрос: Для каких отопительных котлов можно применять теплоносители Antifrogen®?
+				</p>
+				<p>
 					Ответ: Официально одобрены для применения в котлах Viessmann, Buderus, Bosch, Junkers
 				</p>
 				<p>
 					Вопрос: Нужно ли разводить Antifrogen®?
+				</p>
+				<p>
 					Ответ: Так как продукты Antifrogen® - концентраты (без воды более 90% основного вещества - МЭГ или
-					МПГ
-					), то
-					в
-					зависимости от необходимой морозостойкости разводятся водопроводной водой. Соотношение Antifrogen® /
-					вода
-					можно
-					посмотреть в технической документации на продукт (Antifrogen L, Antifrogen N).
+					МПГ ), то в зависимости от необходимой морозостойкости разводятся водопроводной водой. Соотношение
+					Antifrogen® / вода можно посмотреть в технической документации на продукт (Antifrogen L, Antifrogen
+					N).
 				</p>
 				<p>
 					Вопрос: Какую воду нужно применять для разведения Antifrogen®?
+				</p>
+				<p>
 					Ответ: Дистиллированная вода –это идеальный вариант , но продукты Antifrogen® специально разработаны
-					,
-					чтобы
-					не
-					ограничивать потребителя по данному признаку. Поэтому можно применять обычную водопроводную воду с
-					жесткостью не
-					более 8,7 мг*экв/л и содержание хлоридов не более 100 мг/кг. Данные по этим требование можно
-					запросить у
-					местного водоканала или в паспорте на скважину.
+					, чтобы не ограничивать потребителя по данному признаку. Поэтому можно применять обычную
+					водопроводную воду с жесткостью не более 8,7 мг*экв/л и содержание хлоридов не более 100 мг/кг.
+					Данные по этим требование можно запросить у местного водоканала или в паспорте на скважину.
 				</p>
 				<p>
 					Вопрос : Какой температурный диапазон применения для данных продуктов ?
+				</p>
+				<p>
 					Ответ: Antifrogen®L – от минус 50 до +150 град. С (мах.180град.С)
 					Antifrogen®N – от минус 70 до +150 град. С.( мах.180град.С)
 				</p>
