@@ -10,6 +10,18 @@
 	margin-top: 4.5rem;
 }
 
+.form-checkout--action {
+	.form-checkout__row {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	input {
+		width: 100%;
+	}
+}
+
 .form-checkout__footer {
 	margin-top: 4.5rem;
 	text-align: center;

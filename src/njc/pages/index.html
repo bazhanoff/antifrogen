@@ -28,13 +28,38 @@
 			</div>
 		</div>
 		<div class="preview__footer">
-			<button class="button button--xxl button--blue">
+			<button id="button-action" class="button button--xxl button--blue">
 				участвуй в акции
 			</button>
 			<span class="preview__footer-slogan">
 				Каждый 100-й покупатель получает купон в магазин «ИКЕА» на 5000 рублей.
 				Купи Антифроген и участвуй в акции!
 			</span>
+		</div>
+	</div>
+	<div id="modal-action" class="modal modal--l">
+		<div class="modal__box">
+			<div class="modal__inner">
+				<header class="modal__header">
+					<h2 class="title modal__title">
+						Оставьте свои контакты и получите скидку 50% на доставку в пределах МКАД
+					</h2>
+					<button class="button modal__close js-modal-close">close modal</button>
+				</header>
+				<div class="modal__content">
+					<form class="form-checkout form-checkout--action" method="get" action="#0">
+						<label class="field form-checkout__row">
+							<input class="field__input" placeholder="ФИО" required>
+						</label>
+						<label class="field form-checkout__row">
+							<input class="field__input" placeholder="Телефон" required>
+						</label>
+						<div class="form-checkout__footer">
+							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -616,22 +641,23 @@
 						<h2 class="title modal__title">Заявка</h2>
 						<button class="button modal__close js-modal-close">close modal</button>
 					</header>
-					<div class="modal__content">
+					<div id="form-checkout" class="modal__content">
 						<form class="form-checkout" method="get" action="#0">
 							<label class="field field--icon form-checkout__row">
-								<span class="field__hint calculator__liters-hint">Antifrogen® L</span>
+								<span id="form-checkout-hint" class="field__hint"></span>
+								<input id="form-checkout-antifrogen" class="js-field-liter field__input"
+									   name="antifrogenL" required>
+							</label>
+							<label class="field field--icon form-checkout__row">
+								<span class="field__hint">Дистилированная вода</span>
+								<input id="form-checkout-water" class="js-field-liter field__input" required>
+							</label>
+							<label class="field field--icon form-checkout__row">
+								<span class="field__hint">ФИО</span>
 								<input class="js-field-liter field__input" required>
 							</label>
 							<label class="field field--icon form-checkout__row">
-								<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
-								<input class="js-field-liter field__input" required>
-							</label>
-							<label class="field field--icon form-checkout__row">
-								<span class="field__hint calculator__liters-hint">ФИО</span>
-								<input class="js-field-liter field__input" required>
-							</label>
-							<label class="field field--icon form-checkout__row">
-								<span class="field__hint calculator__liters-hint">Телефон</span>
+								<span class="field__hint">Телефон</span>
 								<input class="js-field-liter field__input" required>
 							</label>
 							<div class="form-checkout__footer">

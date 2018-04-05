@@ -128,13 +128,35 @@ $(document).ready(function () {
 		$("#modal-checkout-l").removeClass("modal--active-js");
 		$("#modal-checkout-water").removeClass("modal--active-js");
 		$("#modal-checkout-protectogen").removeClass("modal--active-js");
+		$("#modal-action").removeClass("modal--active-js");
 	});
 
+	//Форма оформить заказ
 	$("#button-checkout").on("click", function () {
 		var n = $('#liters-antifrogen');
 
 		if (n.val() != "") {
+			//  antifrogenN = document.querySelector('input[value="antifrigen-n"]'),
+			var
+				antifrogenL = document.querySelector('input[value="antifrigen-l"]'),
+				formCheckout = document.querySelector("#form-checkout"),
+				formHint = document.querySelector("#form-checkout-hint"),
+				antifrogen =  document.querySelector("#canister-antifrogen"),
+				water = document.querySelector("#canister-water"),
+				formCheckoutAntigrogen = document.querySelector("#form-checkout-antifrogen"),
+				formCheckoutWater =  document.querySelector("#form-checkout-water");
+
+			if (antifrogenL.checked) {
+				formHint.innerHTML = "Antifrogen® L";
+			}
+			else {
+				formHint.innerHTML = "Antifrogen® N";
+			}
+
+			formCheckoutAntigrogen.value =  antifrogen.value;
+			formCheckoutWater.value = water.value;
 			$("#modal-checkout").addClass("modal--active-js");
+
 		}
 		else {
 			alert("Сначала нужно рассчитать!")
@@ -155,5 +177,9 @@ $(document).ready(function () {
 
 	$("#button-checkout-protectogen").on("click", function () {
 		$("#modal-checkout-protectogen").addClass("modal--active-js");
+	});
+
+	$("#button-action").on("click", function () {
+		$("#modal-action").addClass("modal--active-js");
 	});
 });

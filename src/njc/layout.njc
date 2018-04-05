@@ -69,7 +69,7 @@
 				</a>
 			</div>
 			<address class="footer__address">
-				<span class="footer__phone">+7 (495) 765-21-31</span>
+				<a class="link footer__phone" href="tel:+74957652131">+7 (495) 765-21-31</a>
 				<span class="footer__location">ул. Рябиновая, д. 41, корп. 1, стр. 6, Экспо Дизайн Центр Madex</span>
 				<span class="footer__schedule">Пн-Пт: 10-19</span>
 			</address>
