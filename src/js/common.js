@@ -157,4 +157,3 @@ $(document).ready(function () {
 		$("#modal-checkout-protectogen").addClass("modal--active-js");
 	});
 });
-
