@@ -9,11 +9,24 @@
 	left: -99999px;
 }
 
+@media (min-width: 851px) {
+
+	.toggle__label {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (max-width: 850px) {
+
+	.toggle__label {
+		display: inline-block;
+	}
+}
+
 .toggle__label {
-	display: flex;
-	align-items: center;
-	min-height: 37px;
 	position: relative;
+	min-height: 37px;
 	cursor: pointer;
 	padding-left: 50px;
 }

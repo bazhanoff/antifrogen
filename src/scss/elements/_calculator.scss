@@ -2,8 +2,11 @@
 
 .calculator {
 	position: relative;
+}
 
-	&:before {
+@media (min-width: 851px) {
+
+	.calculator:before {
 		content: "";
 		position: absolute;
 		top: -10rem;
@@ -31,8 +34,18 @@
 //	margin-right: 37.5rem;
 //}
 
-.calculator__checkbox:not(:last-child) {
-	margin-right: 10rem;
+@media (max-width: 850px) {
+
+	.calculator__checkbox {
+		margin-top: 2rem;
+	}
+}
+
+@media (min-width: 851px) {
+
+	.calculator__checkbox:not(:last-child) {
+		margin-right: 10rem;
+	}
 }
 
 .calculator__button, .calculator__submit {

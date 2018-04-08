@@ -141,6 +141,23 @@
 	color: $gray;
 }
 
+@media (max-width: 850px) {
+
+	.section__group {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media (min-width: 851px) {
+
+	.section__group {
+		display: flex;
+		align-self: center;
+		margin-left: 5.7rem;
+	}
+}
+
 @media (min-width: 935px) {
 
 	.section__aside {
@@ -240,6 +257,13 @@
 	}
 }
 
+@media (max-width: 513px) {
+
+	.section__calculate {
+		margin-bottom: 2rem;
+	}
+}
+
 @media (min-width: 1028px) {
 
 	.section__calculate {
@@ -254,10 +278,4 @@
 		padding-left: 8.7rem;
 		padding-right: 8.7rem;
 	}
-}
-
-.section__group {
-	display: flex;
-	align-self: center;
-	margin-left: 5.7rem;
 }

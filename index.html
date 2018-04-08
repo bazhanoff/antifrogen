@@ -671,7 +671,7 @@
 				<div id="booking" class="form__row">
 					<label class="field field--icon">
 					<span class="field__hint">
-						<span class="field__hint-main">Необходимо Дистилированной вода</span>
+						<span class="field__hint-main">Необходимо Дистилированной воды</span>
 					</span>
 						<input id="liters-water" class="field__input" placeholder="Результаты рассчёта в литрах"
 							   readonly required>
@@ -693,11 +693,10 @@
 						<button class="button modal__close js-modal-close">close modal</button>
 					</header>
 					<div id="form-checkout" class="modal__content">
-						<form class="form-checkout" method="get" action="#0">
+						<form class="form-checkout" method="post" action="sendmail.php">
 							<label class="field field--icon form-checkout__row">
 								<span id="form-checkout-hint" class="field__hint"></span>
-								<input id="form-checkout-antifrogen" class="js-field-liter field__input"
-									   name="antifrogenL" required>
+								<input id="form-checkout-antifrogen" class="js-field-liter field__input" required>
 							</label>
 							<label class="field field--icon form-checkout__row">
 								<span class="field__hint">Дистилированная вода</span>
@@ -705,11 +704,11 @@
 							</label>
 							<label class="field field--icon form-checkout__row">
 								<span class="field__hint">ФИО</span>
-								<input class="js-field-liter field__input" required>
+								<input name="calculate-fio" class="js-field-liter field__input" required>
 							</label>
 							<label class="field field--icon form-checkout__row">
 								<span class="field__hint">Телефон</span>
-								<input class="js-field-liter field__input" required>
+								<input name="calculate-phone" class="js-field-liter field__input" required>
 							</label>
 							<div class="form-checkout__footer">
 								<button class="button button--xl button--burgundy form-checkout__button">отправить

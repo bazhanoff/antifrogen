@@ -1,17 +1,17 @@
 @import "../variables";
 
-.price {
-	text-align: right;
-}
-
 .price__text {
 	color: $gray;
 	margin-right: 1.8rem;
 }
 
-.price__row {
-	display: flex;
-	align-items: center;
+
+@media (min-width: 851px) {
+
+	.price__row {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .price__current-value {
@@ -51,4 +51,11 @@
 	//	height: 1.8rem;
 	//	border: 1px solid $black;
 	//}
+}
+
+@media (min-width: 851px) {
+
+	.price {
+		text-align: right;
+	}
 }

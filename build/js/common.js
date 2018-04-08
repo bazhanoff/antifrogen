@@ -148,9 +148,11 @@ $(document).ready(function () {
 
 			if (antifrogenL.checked) {
 				formHint.innerHTML = "Antifrogen® L";
+				formCheckoutAntigrogen.name = "antifrogen-l";
 			}
 			else {
 				formHint.innerHTML = "Antifrogen® N";
+				formCheckoutAntigrogen.name = "antifrogen-n";
 			}
 
 			formCheckoutAntigrogen.value =  antifrogen.value;

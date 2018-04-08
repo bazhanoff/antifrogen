@@ -1,5 +1,12 @@
 @import "../variables";
 
+@media (max-width: 850px) {
+
+	.form {
+		text-align: center;
+	}
+}
+
 .form__row:not(:first-child) {
 	margin-top: 6.2rem;
 }
