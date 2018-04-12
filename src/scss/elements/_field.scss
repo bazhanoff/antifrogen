@@ -85,10 +85,12 @@
 	transition: border-color .25s;
 
 	&::-moz-placeholder {
+		font-size: 1.4rem;
 		color: $black;
 	}
 
 	&::-webkit-input-placeholder {
+		font-size: 1.4rem;
 		color: $black;
 	}
 
