@@ -14,8 +14,22 @@
 	color: $white;
 }
 
+.menu {
+	a.active {
+		color: $blue;
+		background-color: $white;
+	}
+}
+
 .menu__link-faq {
 	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	font-family: inherit;
+
+	&:focus {
+		outline: none;
+	}
 }
 
 @media (max-width: 1026px) {
@@ -37,6 +51,10 @@
 	.menu__link {
 		display: block;
 		text-align: center;
+	}
+
+	.menu__link-faq {
+		width: 100%;
 	}
 }
 

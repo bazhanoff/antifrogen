@@ -1,0 +1,33 @@
+@import "../variables";
+
+@media (max-width: 500px) {
+
+	.scrollup {
+		bottom: 45px;
+		right: 12px
+	}
+}
+
+@media (min-width: 501px) {
+
+	.scrollup {
+		bottom: 25px;
+		right: 50px;
+	}
+}
+
+.scrollup {
+	width: 40px;
+	height: 40px;
+	opacity: .5;
+	position: fixed;
+	display: none;
+	z-index: 9999999;
+	text-indent: -9999px;
+	background: url('../images/icon_top.png') no-repeat;
+	transition: opacity .3s;
+
+	&:hover, &:focus {
+		opacity: 1;
+	}
+}

@@ -2,13 +2,60 @@ var header = document.querySelector('.js-menu'),
 	hamburgerButton = header.querySelector('.hamburger');
 
 $(document).ready(function () {
-	$(".menu").on("click", "a", function (evt) {
-		evt.preventDefault();
-		var id = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top - 100}, 1500);
-		$(".menu a").blur();
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 400) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
 	});
+
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+
+	var menu_selector = ".menu";
+	function onScroll(){
+		var scroll_top = $(document).scrollTop();
+		$(menu_selector + " a").each(function(){
+			var hash = $(this).attr("href");
+			var target = $(hash);
+			if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+				$(menu_selector + " a.active").removeClass("active");
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+		});
+	};
+
+
+	$(document).on("scroll", onScroll);
+	$(".menu a").click(function(e) {
+		e.preventDefault();
+		$(document).off("scroll");
+		$(menu_selector + " a.active").removeClass("active");
+		$(this).addClass("active");
+		var hash = $(this).attr("href");
+		var target = $(hash);
+		$("html, body").animate({
+			scrollTop: target.offset().top -100
+		}, 1500, function() {
+			// window.location.hash = hash;
+			$(document).on("scroll", onScroll);
+			$(".menu a").blur();
+		});
+	});
+
+	// $(".menu").on("click", "a", function (evt) {
+	// 	evt.preventDefault();
+	// 	var id = $(this).attr('href'),
+	// 		top = $(id).offset().top;
+	// 	$('body,html').animate({scrollTop: top - 100}, 1500);
+	// 	$(".menu a").blur();
+	// });
 
 	$(".calculate").on("click", "a", function (evt) {
 		evt.preventDefault();
@@ -82,17 +129,19 @@ $(document).ready(function () {
 			r3.val(tres3.toFixed(1));
 			r4.val(Math.ceil(tres4));
 			r5.val(Math.ceil(tres5));
+			return true;
 		}
 		// $('#result-wrap').show();
 	}
 
 	$(function () {
 		$(".js-button-calculate").on("click", function (evt) {
-			// evt.preventDefault();
-			calc();
-			var id = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top - 250}, 1500);
+			evt.preventDefault();
+			if (calc() === true) {
+				var id = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top - 250}, 1500);
+			};
 			$(".js-button-calculate").blur();
 		});
 	});
@@ -141,10 +190,10 @@ $(document).ready(function () {
 				antifrogenL = document.querySelector('input[value="antifrigen-l"]'),
 				formCheckout = document.querySelector("#form-checkout"),
 				formHint = document.querySelector("#form-checkout-hint"),
-				antifrogen =  document.querySelector("#canister-antifrogen"),
+				antifrogen = document.querySelector("#canister-antifrogen"),
 				water = document.querySelector("#canister-water"),
 				formCheckoutAntigrogen = document.querySelector("#form-checkout-antifrogen"),
-				formCheckoutWater =  document.querySelector("#form-checkout-water");
+				formCheckoutWater = document.querySelector("#form-checkout-water");
 
 			if (antifrogenL.checked) {
 				formHint.innerHTML = "Antifrogen® L";
@@ -155,7 +204,7 @@ $(document).ready(function () {
 				formCheckoutAntigrogen.name = "antifrogen-n";
 			}
 
-			formCheckoutAntigrogen.value =  antifrogen.value;
+			formCheckoutAntigrogen.value = antifrogen.value;
 			formCheckoutWater.value = water.value;
 			$("#modal-checkout").addClass("modal--active-js");
 

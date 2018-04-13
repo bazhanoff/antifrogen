@@ -33,9 +33,9 @@
 					<li class="menu__list-item">
 						<a href="#calculator" class="menu__link">Калькулятор</a>
 					</li>
-					
-						
-					
+					<li class="menu__list-item">
+						<button class="menu__link menu__link-faq" type="button">FAQ</button>
+					</li>
 					<li class="menu__list-item">
 						<a href="#delivery" class="menu__link">Доставка</a>
 					</li>
@@ -96,12 +96,12 @@
 					<button class="button modal__close js-modal-close">close modal</button>
 				</header>
 				<div class="modal__content">
-					<form class="form-checkout form-checkout--action" method="get" action="#0">
+					<form class="form-checkout form-checkout--action" method="post" action="sendmail.php">
 						<label class="field form-checkout__row">
-							<input class="field__input" placeholder="ФИО" required>
+							<input name="stock-fio" class="field__input" placeholder="ФИО" required>
 						</label>
 						<label class="field form-checkout__row">
-							<input class="field__input" placeholder="Телефон" required>
+							<input name="stock-phone" class="field__input" placeholder="Телефон" required>
 						</label>
 						<div class="form-checkout__footer">
 							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
@@ -225,22 +225,18 @@
 					<button class="button modal__close js-modal-close">close modal</button>
 				</header>
 				<div class="modal__content">
-					<form class="form-checkout" method="get" action="#0">
+					<form class="form-checkout" method="post" action="sendmail.php">
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Antifrogen® N</span>
-							<input class="field__input" required>
-						</label>
-						<label class="field field--icon form-checkout__row">
-							<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
-							<input class="field__input" required>
+							<input name="antifrogenN-value" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">ФИО</span>
-							<input class="field__input" required>
+							<input name="antifrogenN-fio" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Телефон</span>
-							<input class="field__input" required>
+							<input name="antifrogenN-phone" class="field__input" required>
 						</label>
 						<div class="form-checkout__footer">
 							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
@@ -367,22 +363,18 @@
 					<button class="button modal__close js-modal-close">close modal</button>
 				</header>
 				<div class="modal__content">
-					<form class="form-checkout" method="get" action="#0">
+					<form class="form-checkout" method="post" action="sendmail.php">
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Antifrogen® L</span>
-							<input class="field__input" required>
-						</label>
-						<label class="field field--icon form-checkout__row">
-							<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
-							<input class="field__input" required>
+							<input name="antifrogenL-value" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">ФИО</span>
-							<input class="field__input" required>
+							<input name="antifrogenL-fio" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Телефон</span>
-							<input class="field__input" required>
+							<input name="antifrogenL-phone" class="field__input" required>
 						</label>
 						<div class="form-checkout__footer">
 							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
@@ -488,18 +480,18 @@
 					<button class="button modal__close js-modal-close">close modal</button>
 				</header>
 				<div class="modal__content">
-					<form class="form-checkout" method="get" action="#0">
+					<form class="form-checkout" method="post" action="sendmail.php">
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Protectogen® C Aqua</span>
-							<input class="field__input" required>
+							<input name="protectogen-value" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">ФИО</span>
-							<input class="field__input" required>
+							<input name="protectogen-fio" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Телефон</span>
-							<input class="field__input" required>
+							<input name="protectogen-phone" class="field__input" required>
 						</label>
 						<div class="form-checkout__footer">
 							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
@@ -575,18 +567,18 @@
 					<button class="button modal__close js-modal-close">close modal</button>
 				</header>
 				<div class="modal__content">
-					<form class="form-checkout" method="get" action="#0">
+					<form class="form-checkout" method="post" action="sendmail.php">
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Дистилированная вода</span>
-							<input class="field__input" required>
+							<input name="water-value" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">ФИО</span>
-							<input class="field__input" required>
+							<input name="water-fio" class="field__input" required>
 						</label>
 						<label class="field field--icon form-checkout__row">
 							<span class="field__hint calculator__liters-hint">Телефон</span>
-							<input class="field__input" required>
+							<input name="water-phone" class="field__input" required>
 						</label>
 						<div class="form-checkout__footer">
 							<button class="button button--xl button--burgundy form-checkout__button">отправить</button>
@@ -1011,6 +1003,7 @@
 		</div>
 	</footer>
 </div>
+<a href="#" class="scrollup">Наверх</a>
 <script defer src="js/jquery.min.js"></script>
 <script defer src="js/common.js"></script>
 </body>
